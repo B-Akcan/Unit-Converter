@@ -590,7 +590,7 @@ for quantity in quantities:
     lbl3 = ttk.Label(quantity, textvariable=result, style="Label1.TLabel")
     lbl3.place(x=80, y=90)
 
-    bttn = ttk.Button(quantity, text="Convert", command=convert)
+    bttn = ttk.Button(quantity, text="Convert", command=lambda: convert(0))
     bttn.place(x=254, y=49, width=72, height=32)
 
     lbl3 = ttk.Label(quantity, text="Result:", style="Label1.TLabel")
